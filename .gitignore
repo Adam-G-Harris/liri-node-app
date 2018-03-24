@@ -32,10 +32,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Modules
+# Personal
+script/keys.js
 node_modules
 package.json
-keys.js
+.gitignore
 .env
 .git
 
