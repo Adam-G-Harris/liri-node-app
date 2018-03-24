@@ -1,9 +1,15 @@
 require("dotenv").config();
 
+const args = require('minimist')(process.argv.slice(2));
+
 const keys = require('./keys');
 
-const spotify = new Spotify(keys.spotify);
+const spotify = keys.spotify;
+const twitter = keys.twitter;
 
-const twitter = new Twitter(keys.twitter);
-
-console.log(twitter);
+const userArgs = {
+    twitter: 'my-tweets',
+    spotify: 'spotify-this-song',
+    omdb: 'movie-this',
+    do: 'do-what-it-says'
+};
