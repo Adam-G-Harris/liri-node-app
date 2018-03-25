@@ -15,12 +15,6 @@ const userArgs = {
     do: 'do-what-it-says'
 };
 
-// const config = {
-//     headers: {
-
-//     }
-// };
-
 // First function that is executed
 function init() {
 
@@ -47,7 +41,7 @@ function init() {
             getRandomInfo();
             break;
         default:
-            console.log(`Make sure your input is one of the following: "${userArgs.twitter}", "${userArgs.spotify}", "${userArgs.omdb}", "${userArgs.do}".`);
+            console.log(`Hey ${process.env['USERNAME']}, make sure your input is one of the following: "${userArgs.twitter}", "${userArgs.spotify}", "${userArgs.omdb}", "${userArgs.do}".`);
             break;
     }
 }
@@ -82,7 +76,7 @@ function getHandle() {
     });
 
     return new Promise(resolve => {
-        read.question('Please enter your Twitter handle ==> ', (answer) => {
+        read.question(`Hey ${process.env['USERNAME']}, enter the name of any Twitter account ==> `, (answer) => {
             readline.moveCursor(read.output, 10, 1);
             tempTwitterName = screenName(answer);
             resolve(tempTwitterName);
