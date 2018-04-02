@@ -1,0 +1,26 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "LIRI: Language - Interpretation - Recognition - Interface",
+  "main": "app.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adam-G-Harris/liri-node-app.git"
+  },
+  "author": "Adam Harris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Adam-G-Harris/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/Adam-G-Harris/liri-node-app#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "columnify": "^1.5.4",
+    "dotenv": "^5.0.1",
+    "minimist": "^1.2.0",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.85.0",
+    "twitter-screen-name": "^1.0.0"
+  }
+}
